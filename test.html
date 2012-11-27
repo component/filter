@@ -13,20 +13,40 @@
       border-top-color: #ddd;
       border-radius: 2px;
     }
+    .hide {
+      opacity: .1;
+    }
   </style>
 </head>
 <body>
   <h1>Filter</h1>
   <input type="text" placeholder="Search" />
+
   <ul>
-    <li>Tobi</li>
-    <li>Loki</li>
-    <li>Jane</li>
-    <li>Manny</li>
-    <li>Luna</li>
-    <li>Abby</li>
-    <li>Ewald</li>
-    <li>Bandit</li>
+    <li>Tobi Ferret</li>
+    <li>Loki Ferret</li>
+    <li>Jane Ferret</li>
+    <li>Manny Cat</li>
+    <li>Luna Cat</li>
+    <li>Abby Ferret</li>
+    <li>Ewald Ferret</li>
+    <li>Bandit Ferret</li>
+    <li>Simon Dog</li>
   </ul>
+
+  <script src="build/build.js"></script>
+
+  <script>
+    var filter = require('filter');
+    var ul = document.querySelector('ul');
+    var input = document.querySelector('input');
+
+    input.onkeyup = function(e){
+      var str = input.value;
+      filter(ul, function(li){
+        return ~li.textContent.indexOf(str);
+      });
+    };
+  </script>
 </body>
 </html>

@@ -4,7 +4,9 @@
   "description": "dynamic dom node filtering",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "component/classes": "*"
+  },
   "development": {},
   "license": "MIT",
   "scripts": [
