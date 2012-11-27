@@ -1,7 +1,7 @@
 
 # filter
 
-  dynamic dom node filtering
+  dynamic dom node filtering via callback.
 
 ## Installation
 
