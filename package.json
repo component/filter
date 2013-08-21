@@ -2,7 +2,11 @@
   "name": "filter-component",
   "description": "dynamic dom node filtering",
   "version": "0.0.1",
-  "keywords": ["dom", "filter", "component"],
+  "keywords": [
+    "dom",
+    "filter",
+    "component"
+  ],
   "dependencies": {
     "classes-component": "*"
   },
@@ -11,5 +15,9 @@
     "scripts": {
       "filter": "index.js"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/filter.git"
   }
 }
